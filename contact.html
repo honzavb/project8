@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Genshin Impact - Kontaktní formulář.">
+    <title>Kontakt - Genshin Impact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact">
+    <header>
+        <nav>
+            <ul>
+                <li><img src="map/genshin-impact-logo.png" class="logo" align="left"></li>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="characters.html">Postavy</a></li>
+                <li><a href="map.html">Mapa</a></li>
+                <li><a href="guide.html">Průvodce</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Kontakt</h1>
+            <form id="contactForm" method="post" action="mailto:honzavb@post.cz" enctype="text/plain">
+                <label for="name">Jméno:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Zpráva:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Odeslat</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Genshin Impact Veselý</p>
+    </footer>
+</body>
+</html>

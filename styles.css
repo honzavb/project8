@@ -1,0 +1,291 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-position: center;
+    background-attachment: fixed;
+}
+.characters{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url(map/sumeru.webp);
+    background-position: center;
+    background-attachment: fixed;
+}
+.liyu{
+    backdrop-filter: blur(30px);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.sumer{
+    backdrop-filter: blur(10px);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.monds{
+    backdrop-filter: blur(10px);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.inazu{
+    backdrop-filter: blur(10px);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.fontai{
+    backdrop-filter: blur(10px);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.map-selection-M{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url(map/Mondstadt.webp);
+    background-position: center;
+    background-attachment: fixed;
+}
+.map-selection-L{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url(map/Liyue.webp);
+    background-position: center;
+    background-attachment: fixed;
+}
+.map-selection-I{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url(map/inazuma.webp);
+    background-position: center;
+    background-attachment: fixed;
+}
+.map-selection-F{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url(map/fontaine.webp);
+    background-position: center;
+    background-attachment: fixed;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Character styles */
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.character {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 35px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.character img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.character h2 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+.character p {
+    font-size: 0.9em;
+    color: #666;
+    
+}
+
+.character_popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+    backdrop-filter: blur(10px);
+}
+
+.popup_content {
+    background-color:none;
+    margin: 5% auto;
+    padding: 20px;
+    border: 5px solid #888;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 50px;
+    height: 700px;
+    backdrop-filter: blur(15px);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup_content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.map{
+    background-image: url(map/almost-high-resolution-map-of-teyvat-as-of-the-4-2-expansion-v0-syo5ohqx1g7c1.png);
+}
+.index{
+    background-image: url(map/hPk1CI.jpg);
+    height: 1080px;
+    width: 1920;
+    background-color: lightblue;
+}
+.mapasveta{
+    color: white;
+}
+.padding-top{
+    padding-top: 38px
+}
+.index-text{
+    font-size: 17px;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+.guide-text{
+    font-size: 17px;
+    color: black;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: white;
+}
+.podtext{
+    font-size: 22px;
+    color: black;
+}
+.podtext2{
+    font-size: 28px;
+    color: black;
+}
+.podtext3{
+    font-size: 22px;
+    color: black;
+}
+.podtext-dole{
+    font-size: 28px;
+    color: black;
+    padding-bottom: 30px;
+}
+.guide{
+    background-image: url(map/inazuma-genshin-hvxlxgs9z2hz7yy3.jpg);
+}
+.contact{
+    background-color: #999;
+}
+.logo{
+    height: fit-content;
+    width: fit-content;
+    text-align: left;
+    padding-left: 10px;
+}
